@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF_184447863946 = {isa = PBXBuildFile; fileRef = FR_935153865209 /* iMessageApp.appex */; };
+		397D8E8520C85D0E00FFACDE /* iMessageApp.appex in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_935153865209 /* iMessageApp.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BF_244662257338 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_220787649358 /* MessagesViewController.swift */; };
 		BF_305953981043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FR_394977613546 /* Assets.xcassets */; };
-		BF_367631101933 = {isa = PBXBuildFile; fileRef = FR_479946374821 /* MyApp.app */; };
 		BF_623281046077 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = VG_370507420850 /* MainInterface.storyboard */; };
 		BF_635266257961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_542102542492 /* AppDelegate.swift */; };
 		BF_641784064557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_839117764623 /* ViewController.swift */; };
 		BF_663302336333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FR_505539060662 /* Assets.xcassets */; };
 		BF_821794898678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = VG_783446075167 /* LaunchScreen.storyboard */; };
-		BF_887147700664 /* iMessageApp.appex in CopyFiles */ = {isa = PBXBuildFile; fileRef = FR_935153865209 /* iMessageApp.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF_897522989040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = VG_985030791825 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				BF_887147700664 /* iMessageApp.appex in CopyFiles */,
+				397D8E8520C85D0E00FFACDE /* iMessageApp.appex in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +47,7 @@
 		FR_220787649358 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		FR_370507420850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		FR_394977613546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FR_479946374821 /* MyApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FR_479946374821 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_505539060662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FR_542102542492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FR_783446075167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
