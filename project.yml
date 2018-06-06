@@ -1,0 +1,33 @@
+name: MyApp
+
+settings:
+  base:
+    SDKROOT: iphoneos
+    PARENT_APP_BUNDLE_ID: com.cjwirth.MyApp
+
+targets:
+  MyApp:
+    type: application
+    platform: iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(PARENT_APP_BUNDLE_ID)
+    sources:
+      - Sources
+    dependencies:
+      - target: iMessageApp
+    postBuildScripts:
+      # Copy the iMessage App into the app.
+      # XcodeGen has no "Copy Files" build phase, so we are doing it manually.
+      - name: Embed App Extensions
+        script: |
+          cp -r ${BUILT_PRODUCTS_DIR}/iMessage.appex ${TARGET_BUILD_DIR}/${PLUGINS_FOLDER_PATH}/iMessage.appex
+
+  iMessageApp:
+    type: app-extension.messages
+    platform: iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(PARENT_APP_BUNDLE_ID).iMessage
+    sources:
+      - path: iMessageApp
